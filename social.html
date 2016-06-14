@@ -1,0 +1,19 @@
+<div class="social-sharing">
+	<label>Magento Share: </label>
+	<ul>
+		<li><a target="_blank" href="http://twitter.com/intent/tweet?status=<?php echo $this->escapeHtml($post->getPostTitle()); ?>+<?php echo $this->escapeHtml($currentUrl) ?>"><i class="fa fa-twitter"></i>Twitter</a></li>
+		<li><a target="_blank" href="http://www.facebook.com/share.php?u=<?php echo $this->escapeHtml($currentUrl) ?>&title=<?php echo $this->escapeHtml($post->getPostTitle()); ?>"><i class="fa fa-facebook"></i>Facebook</a></li>
+		<li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $this->escapeHtml($currentUrl) ?>&title=<?php echo $this->escapeHtml($post->getPostTitle()); ?>"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+		<li><a target="_blank" href="https://plus.google.com/share?url=<?php echo $this->escapeHtml($currentUrl) ?>"><i class="fa fa-google-plus"></i>+1</a></li>
+	</ul>
+</div>
+
+<div class="social-sharing">
+	<label>Wordpress Share: </label>
+	<ul>
+		<li><a target="_blank" href="http://twitter.com/intent/tweet?status=<?php the_title(); ?>+<?php the_permalink(); ?>"><i class="fa fa-twitter"></i>Twitter</a></li>
+		<li><a target="_blank" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="fa fa-facebook"></i>Facebook</a></li>
+		<li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+		<li><a target="_blank" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="fa fa-google-plus"></i>+1</a></li>
+	</ul>
+</div>
